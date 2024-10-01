@@ -32,6 +32,7 @@ h2{
 h3{
     font-family: 'Dancing Script';
     text-decoration: underline;
+    color: white;
 }
 
 nav {
@@ -68,18 +69,61 @@ a {
 }
 
 a:hover, a:focus {
-    background-color: rgba(78, 94, 114, 1);
+    background-color: rgb(110, 124, 74);
+}
+
+.white-button {
+    background-color: white; 
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none; 
+    display: inline-block; 
+    transition: background-color 0.2s, color 0.2s; 
+}
+
+.white-button:hover,
+.white-button:focus {
+    background-color: #eedec5; 
+    color: white;
 }
 
 aside {
     float: right;
     width: 25%;
-    background-color: #f1f1f1;
+    background-color: #9fa081;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     border-radius: 10px;
 }
+
+aside ul {
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+aside ul li {
+    position: relative; 
+    padding-left: 1.5em; 
+    color: white;
+}
+
+aside ul li::before {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    top: 0.2em; 
+    width: 0.5em; 
+    height: 0.5em; 
+    background-color: white;
+    border-radius: 50%;
+}
+
+aside ol li::marker {
+    color: white; 
+}
+
 
 footer {
     clear: both;
