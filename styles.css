@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ede8d0;
+    color: black;
+    text-align: center; 
+    font-family: "Afacad Flux", sans-serif;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Dancing Script';
+}
+
+h2{
+    font-family: 'Dancing Script';
+    text-decoration: underline;
+}
+
+h3{
+    font-family: 'Dancing Script';
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #5C4033;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; 
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: rgba(152,168,105);
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+a:hover, a:focus {
+    background-color: rgba(78, 94, 114, 1);
+}
+
+main {
+    float: left;
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+footer {
+    clear: both;
+    background-color: #5C4033;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0; 
+    font-size: 0.9em; 
+}
+
+footer a {
+    display: inline-block;
+    margin-top: 0.5rem; 
+    background-color: rgba(152,168,105);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+footer a:hover {
+    background-color: rgba(78, 94, 114, 1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#table {
+    width: 80%; /* Set a width for the table */
+    margin: 20px auto; /* Center the table horizontally */
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #4e5e72;
+    padding: 10px;
+    text-align: left; /* Keep text alignment left for the cells */
+}
+
+th {
+    background-color: rgba(94, 64, 51);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 768px) {
+    main, aside {
+        width: 100%;
+        float: none;
+    }
+
+    img.rounded-corners{
+        border-radius: 50%;
+    }
+}
