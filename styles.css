@@ -52,6 +52,7 @@ nav ul li {
 a {
     display: inline-block;
     padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
     border-radius: 0.25rem;
     background-color: rgba(152,168,105);
     color: white;
