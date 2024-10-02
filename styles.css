@@ -183,13 +183,22 @@ tr:nth-child(even) {
 }
 
 @media screen and (max-width: 768px) {
-    main, aside {
+    aside {
+        position: relative;
         width: 100%;
-        float: none;
+        margin-top: 20px;
     }
-
-    img.rounded-corners{
-        border-radius: 50%;
+    main {
+        position: relative;
+        width: 100%;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper {
+        width: 100%;
+        margin: 20px auto;
     }
 }
-
