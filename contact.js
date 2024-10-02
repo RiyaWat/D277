@@ -13,3 +13,4 @@ document.getElementById('sendLetter').addEventListener('click', function() {
   
   addClass();
 });
+
